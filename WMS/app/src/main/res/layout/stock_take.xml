@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StockTake">
+
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Submit" />
+
+    <TableLayout
+        android:id="@+id/table_view"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="55dp"
+        android:layout_height="fill_parent">
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:textAlignment="center">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal">
+
+                    <SurfaceView
+                        android:id="@+id/surface_view"
+                        android:layout_width="213dp"
+                        android:layout_height="155dp"
+                        android:layout_marginTop="4dp"
+                        android:clickable="false" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/barcode_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="5dp"
+                        android:text="Barcode Text"
+                        android:textSize="25sp"
+                        app:layout_constraintTop_toBottomOf="@id/surface_view"
+                        tools:layout_editor_absoluteX="0dp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:stretchColumns="*">
+
+                <Button
+                    android:id="@+id/file_upload"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:text="Upload" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:stretchColumns="*">
+
+                    <Button
+                        android:id="@+id/btn_clear"
+                        android:layout_width="140dp"
+                        android:layout_height="45dp"
+                        android:text="Clear" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:stretchColumns="*">
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="140dp"
+                        android:layout_height="70dp"
+                        android:text="Save" />
+                </TableRow>
+
+
+            </TableLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_span="2"
+            android:gravity="center"
+            android:stretchColumns="*">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_span="2"
+                android:hint="Search Item"
+                android:textSize="14dp" />
+        </TableRow>
+    </TableLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="260dp">
+
+
+        <TableLayout
+            android:id="@+id/tableInvoices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:stretchColumns="*"></TableLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

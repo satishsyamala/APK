@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <TableLayout
+        android:id="@+id/table_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textAlignment="textStart"
+           >
+            <EditText
+                android:id="@+id/item_code"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textAlignment="textStart"
+                android:text=""
+                android:textSize="15sp"
+                android:hint="Item Code"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textAlignment="textStart"
+            >
+
+
+
+            <EditText
+                android:id="@+id/item_name"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:inputType="text|textMultiLine"
+                android:textAlignment="textStart"
+                android:text=""
+                android:textSize="15sp"
+
+                android:hint="Name"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textAlignment="textStart"
+            >
+
+
+            <EditText
+                android:id="@+id/item_price"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:textAlignment="textEnd"
+                android:text=""
+                android:textSize="15sp"
+                android:hint="Price"
+                />
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textAlignment="textStart">
+            <EditText
+                android:id="@+id/item_bar_code"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textAlignment="textStart"
+                android:text=""
+                android:textSize="15sp"
+                android:hint="Barcode"
+                />
+        </TableRow>
+       <TableRow
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:gravity="center_vertical"
+           android:textAlignment="textStart">
+           <EditText
+               android:id="@+id/carton_size"
+               android:layout_width="250dp"
+               android:layout_height="50dp"
+               android:textAlignment="textEnd"
+               android:text=""
+               android:inputType="number"
+               android:textSize="15sp"
+               android:hint="Carton Size"
+               />
+       </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>

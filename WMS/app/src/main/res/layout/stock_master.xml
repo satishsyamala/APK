@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StockMaster">
+
+    <Button
+        android:id="@+id/button_browse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Stocks(.csv)"
+         />
+    <EditText
+        android:id="@+id/txt_search"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:hint="Item Seach"
+        app:layout_constraintTop_toBottomOf="@id/button_browse"
+
+        />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_baseline_share_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_browse" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+         android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@id/button_browse"
+        android:layout_height="match_parent" >
+        <TableLayout
+            android:id="@+id/tableInvoices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:stretchColumns="*">
+        </TableLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="10dp"
+        android:adjustViewBounds="true"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#A0DEFA"
+        android:text="@string/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

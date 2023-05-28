@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:lines="3"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="?android:attr/textColorAlertDialogListItem"
+    android:paddingStart="14dip"
+    android:paddingEnd="15dip"
+    android:textSize="20dp"
+    android:text="Your Question Display Hear....Your Question Display Hear....Your Question Display Hear....Your Question Display Hear...."
+    />
+
+

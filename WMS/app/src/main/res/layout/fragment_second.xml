@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SecondFragment">
+    <TableRow  android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+
+
+</TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+
+        <TextView android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_stock"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:text="Stock"
+            android:textSize="30dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_stock_take"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:text="Stock Take"
+            android:textSize="30dp" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:textAlignment="center">
+        <Button
+            android:id="@+id/btn_stock_in"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:text="Stock In"
+            android:textSize="30dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:textAlignment="center">
+        <Button
+            android:id="@+id/btn_stock_out"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:text="Stock Out"
+            android:textSize="30dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:textAlignment="center">
+        <Button
+            android:id="@+id/btn_sales"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:text="Sales"
+            android:textSize="30dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/btn_reports"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+
+            android:text="Reports"
+            android:textSize="30dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/btn_client_liet"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+
+            android:text="Client List"
+            android:textSize="30dp" />
+    </TableRow>
+
+
+
+</TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
