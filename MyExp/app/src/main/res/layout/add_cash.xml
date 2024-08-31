@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/table_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textAlignment="textStart">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="15sp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textAlignment="textStart">
+
+            <EditText
+                android:id="@+id/cash_date"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:hint="Date"
+                android:inputType="text|textMultiLine"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textAlignment="textStart">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="15sp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textAlignment="textStart">
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:hint="Description"
+                android:inputType="text|textMultiLine"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textAlignment="textStart">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textSize="15sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="388dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textAlignment="textStart">
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:hint="Amount"
+                android:inputType="number"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>

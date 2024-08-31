@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Registration">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.myexp.FirstFragment"
+        android:label="Expenses"
+        tools:layout="@layout/fragment_first">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/Registration"
+        android:name="com.example.myexp.Registration"
+        android:label="Client Home"
+        tools:layout="@layout/registration">
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.myexp.SecondFragment"
+        android:label="Client Home"
+        tools:layout="@layout/fragment_second">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/Expenses"
+        android:name="com.example.myexp.Expenses"
+        android:label="Expenses"
+        tools:layout="@layout/expenses">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ExpTypes"
+        android:name="com.example.myexp.ExpTypes"
+        android:label="Expense Types"
+        tools:layout="@layout/exp_types">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ExpCharges"
+        android:name="com.example.myexp.ExpCharges"
+        android:label="ST History"
+        tools:layout="@layout/exp_charges">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ExpChargesDetails"
+        android:name="com.example.myexp.ExpChargesDetails"
+        android:label="Activation"
+        tools:layout="@layout/exp_charges_details">
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddCashDetails"
+        android:name="com.example.myexp.AddCashDetails"
+        android:label="Activation"
+        tools:layout="@layout/add_cash_details">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fileChooser"
+        android:name="com.example.myexp.FileChooserFragment"
+        android:label="File Chooser"
+        tools:layout="@layout/fragment_file_chooser">
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.myexp.Login"
+        android:label="Login"
+        tools:layout="@layout/login">
+    </fragment>
+
+    <fragment
+        android:id="@+id/StockView"
+        android:name="com.example.myexp.StockView"
+        android:label="Sales"
+        tools:layout="@layout/stock_view">
+    </fragment>
+
+    <fragment
+        android:id="@+id/ReportView"
+        android:name="com.example.myexp.ReportView"
+        android:label="Report"
+        tools:layout="@layout/report_view">
+    </fragment>
+
+    <fragment
+        android:id="@+id/MenuItem"
+        android:name="com.example.myexp.MenuGrid"
+        android:label="Menu"
+        tools:layout="@layout/client_menus">
+    </fragment>
+
+    <fragment
+        android:id="@+id/Settings"
+        android:name="com.example.myexp.Settings"
+        android:label="Settings"
+        tools:layout="@layout/settings">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/changepin"
+        android:name="com.example.myexp.ChangePin"
+        android:label="Change Pin"
+        tools:layout="@layout/changepin">
+    </fragment>
+
+    <fragment
+        android:id="@+id/CashIn"
+        android:name="com.example.myexp.CashIn"
+        android:label="Cash In"
+        tools:layout="@layout/cash_in">
+    </fragment>
+
+
+
+</navigation>
